@@ -10,5 +10,13 @@ class TheWay < Formula
 
   def install
     bin.install "the-way"
+    mkdir_p prefix/"completions"
+    ["zsh", "bash", "fish"].each do |shell|
+       `#{bin/"the-way"} complete #{shell} > #{prefix/"completions/_the-way.#{shell}"}`
+    end
+
+    zsh_completion.install prefix/"completions/_the-way.zsh" => "_the-way"
+    fish_completion.install prefix/"completions/_the-way.fish"
+    bash_completion.install prefix/"completions/_the-way.bash"
   end
 end
