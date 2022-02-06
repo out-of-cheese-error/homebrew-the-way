@@ -4,9 +4,9 @@
 class TheWay < Formula
   desc "A code snippets manager for your terminal"
   homepage "https://github.com/out-of-cheese-error/the-way"
-  url "https://github.com/out-of-cheese-error/the-way/releases/download/v0.15.0/the-way-macos.tar.gz"
-  sha256 "17945457a73108a3195b5bfd074f652b806c4e79a71f19c0843cdb333e7f630e"
-  version "0.15.0"
+  url "https://github.com/out-of-cheese-error/the-way/releases/download/v0.16.0/the-way-macos.tar.gz"
+  sha256 "12c8a915845c973382bc8d83962217452d1e3012843ccc3f26d05dee6a7e97bc"
+  version "0.16.0"
 
   def install
     bin.install "the-way"
